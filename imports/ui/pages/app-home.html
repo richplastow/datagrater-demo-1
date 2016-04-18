@@ -1,0 +1,29 @@
+<template name="App_home">
+
+  <h1>Home page</h1>
+
+  <div class="list-messages">
+    <h4>Messages:</h4>
+    <ul>
+    {{#each message in messages}}
+      <li><a href="{{pathFor 'Messages.show' _id=message._id}}"
+        title="{{message.text}}">
+        {{message.text}}
+      </a></li>
+    {{/each}}
+    </ul>
+  </div>
+
+  <div class="list-rooms">
+    <h4>Rooms:</h4>
+    <ul>
+    {{#each room in rooms}}
+      <li><a href="{{pathFor 'Rooms.show' _id=room._id}}"
+        title="{{room.name}}">
+        {{room.name}}
+      </a></li>
+    {{/each}}
+    </ul>
+  </div>
+
+</template>

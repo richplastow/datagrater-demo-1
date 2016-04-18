@@ -1,0 +1,17 @@
+<template name="Rooms_show_page">
+
+  <h1>Room: {{room.name}}</h1>
+
+  <div class="list-messages">
+    <h4>Messages:</h4>
+    <ul>
+    {{#each message in messages}}
+      <li><a href="{{pathFor 'Messages.show' _id=message._id}}"
+        title="{{message.text}}">
+        {{message.text}}
+      </a></li>
+    {{/each}}
+    </ul>
+  </div>
+
+</template>

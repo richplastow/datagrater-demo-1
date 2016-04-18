@@ -1,6 +1,6 @@
 {
   "name": "dboss-demo-1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Basic demo of a Meteor app with DBoss installed",
   "private": false,
   "scripts": {

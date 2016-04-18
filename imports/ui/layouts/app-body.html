@@ -1,0 +1,11 @@
+<template name="App_body">
+
+  <section id="menu">
+    <a href="{{pathFor 'App.home'}}">Home</a>
+  </section>
+
+  <div id="content-container">
+    {{> Template.dynamic template=main}}
+  </div>
+
+</template>

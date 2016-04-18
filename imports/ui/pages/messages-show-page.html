@@ -1,0 +1,8 @@
+<template name="Messages_show_page">
+
+  <h1>Message in <a href="{{pathFor 'Rooms.show' _id=room._id}}"
+    title="{{room.name}}">{{room.name}}</a>:</h1>
+  <p>{{message.text}}</p>
+  <h4>{{message.createdAt}}</h4>
+
+</template>
