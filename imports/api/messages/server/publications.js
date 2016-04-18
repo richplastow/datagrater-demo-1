@@ -5,4 +5,3 @@ import { Messages } from '../define-messages.js';
 Meteor.publish('messages', function messages() {
   return Messages.find({}, {});
 });
-

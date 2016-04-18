@@ -5,4 +5,3 @@ import { Rooms  } from '../define-rooms.js';
 Meteor.publish('rooms', function rooms() {
   return Rooms.find({}, {});
 });
-
