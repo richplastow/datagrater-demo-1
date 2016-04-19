@@ -1,5 +1,6 @@
 //// The Messages_show_page template shows a particular Message document. 
 import './messages-show-page.html';
+import { Template   } from 'meteor/templating'; //@todo is this needed here?
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Rooms      } from '../../api/rooms/define-rooms.js';
 import { Messages   } from '../../api/messages/define-messages.js';
