@@ -8,4 +8,4 @@ import './register-api.js';
 
 //// Configure and startup DataGrater. 
 import { DataGrater } from 'meteor/oopish:datagrater'
-DataGrater();
+DataGrater('@todo SERVER CONFIG');
