@@ -5,7 +5,3 @@ import './fixtures.js';
 
 //// Define all methods and publications. 
 import './register-api.js';
-
-//// Configure and startup DataGrater. 
-import { DataGrater } from 'meteor/oopish:datagrater'
-DataGrater('@todo SERVER CONFIG');

@@ -4,6 +4,8 @@ import { Messages } from '../../api/messages/define-messages.js';
 import { Rooms    } from '../../api/rooms/define-rooms.js';
 
 Meteor.startup( () => {
+  // Messages.remove({});
+  // Rooms.remove({});
   if (
       0 !== Messages.find().count()
    || 0 !== Rooms.find().count()
@@ -13,7 +15,7 @@ Meteor.startup( () => {
 
   ([
     { name:'Lounge' , secretInfo:'Admin only!', messages:['Hi!', 'Relaxing!'] },
-    { name:'Kitchen', secretInfo:'No peeking!', messages:['Hi!', 'Cooking!'] },
+    { name:'Kitchen', secretInfo:123          , messages:['Hi!', 'Cooking!'] },
   ]).forEach( (room) => {
     const roomId = Rooms.insert({
       name:       room.name,
